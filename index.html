@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortify | Smart Waste Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>♻️ Sortify</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#sort">Sort Waste</a>
+            <a href="#tips">Eco Tips</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="dashboard">
+    <div class="stat-card">
+        <span>♻️</span>
+        <h2 id="categoryCount">8</h2>
+        <p>Waste Items</p>
+    </div>
+
+    <div class="stat-card">
+        <span>🌿</span>
+        <h2 id="tipCount">3</h2>
+        <p>Eco Tips</p>
+    </div>
+
+    <div class="stat-card">
+        <span>🗑️</span>
+        <h2 id="sortedCount">0</h2>
+        <p>Items Sorted</p>
+    </div>
+
+    <div class="stat-card">
+        <span>🌎</span>
+        <h2 id="actionCount">0</h2>
+        <p>Eco Actions</p>
+    </div>
+</section>
+        <div class="hero-content">
+            <p class="tagline">A GREENER TOMORROW STARTS TODAY</p>
+            <h2>Sort Smart.<br><span>Live Green.</span></h2>
+            <p>Make waste segregation simple. Discover how to dispose of everyday waste responsibly.</p>
+            <a href="#sort" class="btn">Start Sorting →</a>
+        </div>
+        <div class="hero-icon">🌍</div>
+    </section>
+
+    <section id="sort" class="section">
+        <p class="eyebrow">WASTE SEGREGATION</p>
+        <h2>Where Does Your Waste Belong?</h2>
+        <p class="subtitle">Select an item to discover its category and disposal method.</p>
+
+        <div class="sort-box">
+            <label for="wasteItem">Choose a waste item</label>
+            <label for="wasteSearch">Search for a waste item</label>
+
+<input
+    type="text"
+    id="wasteSearch"
+    placeholder="Example: plastic bottle"
+>
+
+            <select id="wasteItem">
+                <option value="">Select an item</option>
+                <option value="banana">🍌 Banana Peel</option>
+                <option value="food">🍎 Food Scraps</option>
+                <option value="plastic">🧴 Plastic Bottle</option>
+                <option value="paper">📄 Paper</option>
+                <option value="glass">🍾 Glass Bottle</option>
+                <option value="battery">🔋 Used Battery</option>
+                <option value="metal">🥫 Metal Can</option>
+                <option value="ewaste">📱 Old Mobile Phone</option>
+            </select>
+
+            <button onclick="sortWaste()">Find Disposal Method</button>
+
+            <div id="result" class="result">
+                <span class="result-icon">🌱</span>
+                <p>Your waste sorting guide will appear here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="section tips-section">
+        <p class="eyebrow">SMALL STEPS, BIG IMPACT</p>
+        <h2>Simple Ways to Go Green</h2>
+
+        <div class="cards">
+            <div class="card">
+                <span>♻️</span>
+                <h3>Reuse More</h3>
+                <p>Choose reusable bags and bottles instead of disposable alternatives.</p>
+            </div>
+
+            <div class="card">
+                <span>🌿</span>
+                <h3>Compost Waste</h3>
+                <p>Turn suitable kitchen scraps into useful compost.</p>
+            </div>
+
+            <div class="card">
+                <span>🚯</span>
+                <h3>Reduce Plastic</h3>
+                <p>Avoid unnecessary single-use plastic and recycle correctly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <section class="challenge-section" id="challenge">
+    <p class="eyebrow">YOUR DAILY MISSION</p>
+    <h2>🌱 Today's Eco Challenge</h2>
+
+    <p>Choose a small action to make a difference.</p>
+
+    <div class="challenge-box">
+        <label>
+            <input type="checkbox" class="eco-action">
+            Carry a reusable water bottle
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco-action">
+            Avoid unnecessary plastic bags
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco-action">
+            Separate wet and dry waste
+        </label>
+
+        <label>
+            <input type="checkbox" class="eco-action">
+            Reuse an item instead of throwing it away
+        </label>
+
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="progressText">0 of 4 challenges completed</p>
+    </div>
+</section>
+        <h2>About Sortify</h2>
+        <p>Sortify is a waste segregation and recycling guidance platform designed to help people make informed disposal decisions and develop environmentally responsible habits.</p>
+        <div class="sdg">🌎 Supporting UN Sustainable Development Goal 12</div>
+    </section>
+
+    <footer>
+        <h3>♻️ Sortify</h3>
+        <p>Sort Smart. Live Green.</p>
+        <p class="copyright">A Student Project for a Sustainable Future</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

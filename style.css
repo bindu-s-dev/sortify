@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8faf7;
+    color: #25372b;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    border-bottom: 1px solid #e6eee5;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #217346;
+    font-size: 27px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #425448;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #21864b;
+}
+
+.hero {
+    min-height: 410px;
+    padding: 75px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: linear-gradient(120deg, #e6f5e9, #f5faf1);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline,
+.eyebrow {
+    color: #26834d;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.hero h2 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 18px 0;
+    color: #183f2b;
+}
+
+.hero h2 span {
+    color: #27854d;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #59695e;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #247b45;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.btn:hover,
+button:hover {
+    background: #155c32;
+}
+
+.hero-icon {
+    font-size: 130px;
+    padding: 35px;
+    background: #ffffffa8;
+    border-radius: 50%;
+}
+
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2,
+.about-section h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #1d482f;
+}
+
+.subtitle {
+    color: #68756b;
+    margin-bottom: 30px;
+}
+
+.sort-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e1ebe0;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #173b2010;
+    text-align: left;
+}
+
+.sort-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd9ce;
+    border-radius: 7px;
+    background: white;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 7px;
+    color: white;
+    background: #247b45;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 8px;
+    background: #f0f8f0;
+    border: 1px solid #dcebdc;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.result h3 {
+    color: #217346;
+    margin-bottom: 8px;
+}
+
+.result p {
+    margin: 6px 0;
+}
+
+.result-icon {
+    font-size: 28px;
+}
+
+.tips-section {
+    background: #f0f6ef;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    width: 270px;
+    padding: 28px 22px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #e3ebe1;
+}
+
+.card span {
+    font-size: 36px;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #267347;
+}
+
+.card p {
+    color: #657167;
+    font-size: 14px;
+}
+
+.about-section {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.about-section > p {
+    max-width: 700px;
+    margin: 15px auto 25px;
+    color: #5b6b60;
+}
+
+.sdg {
+    display: inline-block;
+    background: #e7f4e8;
+    color: #24663c;
+    padding: 12px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #173e29;
+    color: white;
+}
+
+footer h3 {
+    font-size: 24px;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #c8d9cb;
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 55px 7%;
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-icon {
+        font-size: 80px;
+        padding: 20px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .section h2,
+    .about-section h2 {
+        font-size: 25px;
+    }
+
+    .sort-box {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+/* Statistics Dashboard */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 30px 8%;
+    background: white;
+}
+
+.stat-card {
+    background: #f0f8f0;
+    padding: 22px 12px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #dcebdc;
+}
+
+.stat-card span {
+    font-size: 30px;
+}
+
+.stat-card h2 {
+    color: #217346;
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+.stat-card p {
+    color: #59695e;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 5%;
+    }
+}
+/* Daily Eco Challenge */
+
+.challenge-section {
+    padding: 60px 8%;
+    text-align: center;
+    background: #e7f4e8;
+}
+
+.challenge-section h2 {
+    color: #1d482f;
+    margin: 10px 0;
+}
+
+.challenge-box {
+    max-width: 550px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.challenge-box label {
+    display: block;
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #edf1ed;
+}
+
+.challenge-box input {
+    margin-right: 10px;
+    accent-color: #247b45;
+}
+
+.progress-track {
+    height: 12px;
+    background: #e3eae3;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 22px;
+}
+
+#progressBar {
+    width: 0;
+    height: 100%;
+    background: #27854d;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    margin-top: 10px;
+    text-align: center;
+    color: #247b45;
+    font-weight: bold;
+}
+#wasteSearch {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccd9ce;
+    border-radius: 7px;
+    font-size: 15px;
+}
